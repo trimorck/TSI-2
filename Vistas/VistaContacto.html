@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contactos - Clínica Odontológica</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f4; /* Fondo claro */
+        }
+
+        h1 {
+            text-align: center; /* Alineación centrada para el título principal */
+            color: #333; /* Color oscuro */
+            margin-top: 20px;
+            font-size: 2.5em;
+        }
+
+        h2 {
+            text-align: left; /* Alineación a la izquierda para otros títulos */
+            color: #007bff; /* Color azul para subtítulos */
+            font-size: 1.8em;
+            margin-bottom: 20px;
+        }
+
+        h3 {
+            font-size: 1.5em;
+            margin-bottom: 15px;
+            color: #007bff; /* Color azul para h3 */
+            text-align: center; /* Alineación centrada para el título de información de contacto */
+        }
+
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 20px;
+            background-color: #fff; /* Fondo blanco para los contenedores */
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            border-radius: 8px;
+            margin-bottom: 20px;
+        }
+
+        .map-container {
+            position: relative;
+            padding-bottom: 56.25%;
+            height: 0;
+            overflow: hidden;
+            border-radius: 8px;
+        }
+
+        .map-container iframe {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            border: 0;
+        }
+
+        .contact-details, .hours-details {
+            padding: 20px;
+            text-align: center;
+        }
+
+        .contact-details p {
+            font-size: 1.2em;
+            margin: 5px 0;
+            color: #555; /* Color gris para el texto de contacto */
+        }
+
+        .hours-table {
+            width: 100%;
+            border-collapse: collapse;
+            margin: 0 auto;
+            text-align: left;
+        }
+
+        .hours-table th, .hours-table td {
+            padding: 10px;
+            border: 1px solid #ddd; /* Color gris claro para los bordes */
+            font-size: 1.2em;
+            color: #555; /* Color gris para texto de tabla */
+        }
+
+        .hours-table th {
+            background-color: #007bff; /* Fondo azul para los encabezados de tabla */
+            color: #fff; /* Color blanco para el texto de los encabezados */
+            text-align: center;
+        }
+
+        .hours-table td {
+            text-align: center;
+        }
+
+        /* Responsividad */
+        @media (max-width: 768px) {
+            h1 {
+                font-size: 2em;
+            }
+
+            h2, h3 {
+                font-size: 1.5em;
+            }
+
+            .container {
+                padding: 10px;
+            }
+
+            .contact-details p, .hours-table th, .hours-table td {
+                font-size: 1em;
+            }
+        }
+    </style>
+</head>
+<body>
+
+    <h1>Información</h1>
+
+    <!-- Sección: Cómo llegar -->
+    <div class="container">
+        <h3>Cómo llegar</h3>
+        <div class="map-container">
+            <iframe 
+                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3350.5888567545176!2d-71.24693512456267!3d-32.88259596865603!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x9689cd83bd3c9273%3A0x6298d2287dfd787b!2sInalto%20Salud%20Ltda!5e0!3m2!1ses-419!2scl!4v1728708862745!5m2!1ses-419!2scl" 
+                allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"
+                aria-label="Mapa de Clínica Odontológica"
+            ></iframe>
+        </div>
+    </div>
+
+    <!-- Sección: Información de Contacto -->
+    <div class="container">
+        <h3>Información de Contactos</h3>
+        <div class="contact-details">
+            <p><strong>Dirección:</strong> Calle Falsa 123, Quillota, Región V</p>
+            <p><strong>Teléfono:</strong> +56 9 1234 5678</p>
+            <p><strong>Email:</strong> contacto@clinicaodontologica.com</p>
+        </div>
+    </div>
+
+    <!-- Sección: Redes Sociales -->
+    <div class="container">
+        <h3 >Redes Sociales</h3>
+        <div style="text-align: center;">
+            <p>¡Síguenos en nuestras redes sociales!</p>
+        <p>
+            <a href="https://facebook.com" target="_blank">Facebook</a> | 
+            <a href="https://instagram.com" target="_blank">Instagram</a> | 
+            <a href="https://twitter.com" target="_blank">Twitter</a>
+        </p>
+        </div>
+    </div>
+
+    <!-- Sección: Horario de Atención -->
+    <div class="container">
+        <h3>Horario de Atención</h3>
+        <table class="hours-table">
+            <thead>
+                <tr>
+                    <th>Día</th>
+                    <th>Horario</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>Lunes a Viernes</td>
+                    <td>9:00 AM - 6:00 PM</td>
+                </tr>
+                <tr>
+                    <td>Sábado</td>
+                    <td>9:00 AM - 2:00 PM</td>
+                </tr>
+                <tr>
+                    <td>Domingo</td>
+                    <td>Cerrado</td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+
+</body>
+</html>

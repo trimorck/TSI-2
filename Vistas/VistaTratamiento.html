@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nuestros Tratamientos - Clínica Odontológica</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f4;
+        }
+
+        h1 {
+            text-align: center; /* Centra el título */
+            color: #333;
+            margin-top: 20px;
+            font-size: 2.5em;
+        }
+
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 20px;
+            background-color: #fff;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            border-radius: 8px;
+            margin-bottom: 20px;
+        }
+        
+        .treatment {
+            display: flex; /* Usa flexbox para alinear elementos */
+            justify-content: space-between; /* Espacio entre el texto y la imagen */
+            align-items: center; /* Alineación vertical centrada */
+            margin: 20px 0;
+            padding: 15px;
+            border: 1px solid #ddd;
+            border-radius: 8px;
+            background-color: #f9f9f9;
+        }
+
+        .treatment-info {
+            flex: 1; /* Ocupa el espacio disponible */
+            padding-right: 20px; /* Espacio entre texto e imagen */
+        }
+
+        .treatment-image img {
+            max-width: 250px; /* Ajusta el ancho máximo de la imagen */
+            height: auto; /* Mantiene la proporción de la imagen */
+            border-radius: 8px; /* Bordes redondeados */
+        }
+
+        .treatment h2 {
+            color: #007bff; /* Color para los títulos de tratamientos */
+            margin: 0;
+        }
+
+        .treatment p {
+            color: #555;
+        }
+
+        /* Responsividad */
+        @media (max-width: 768px) {
+            h1 {
+                font-size: 2em;
+            }
+
+            .container {
+                padding: 10px;
+            }
+
+            .treatment {
+                flex-direction: column; /* Cambia a columna en pantallas pequeñas */
+                align-items: flex-start; /* Alinea elementos a la izquierda */
+            }
+
+            .treatment-image {
+                margin-top: 20px; /* Margen superior para separación */
+            }
+        }
+    </style>
+</head>
+<body>
+
+    <h1>Nuestros Tratamientos</h1>
+
+    <div class="container">
+        <!-- Ejemplo de tratamiento 1 -->
+        <div class="treatment">
+            <div class="treatment-info">
+                <h2>Tratamiento 1: Limpieza Dental</h2>
+                <p>Descripción del tratamiento 1, incluyendo sus beneficios y procedimiento.</p>
+                <p><strong>Precio:</strong> $X,XXX</p>
+                <!-- <button>Más Información</button> -->
+                <a href="VistaTratamientoE.html" class="back-button" style="text-decoration: none;" >Más Información</a>
+            </div>
+            <div class="treatment-image">
+                <img src="beneficios-limpieza-dental-1021x640.jpg" alt="Limpieza Dental">
+            </div>
+        </div>
+
+        <!-- Ejemplo de tratamiento 2 -->
+        <div class="treatment">
+            <div class="treatment-info">
+                <h2>Tratamiento 2: Blanqueamiento Dental</h2>
+                <p>Descripción del tratamiento 2, incluyendo sus beneficios y procedimiento.</p>
+                <p><strong>Precio:</strong> $X,XXX</p>
+                <!-- <button>Más Información</button> -->
+                <a href="VistaTratamientoE.html" class="back-button" style="text-decoration: none;">Más Información</a>
+            </div>
+            <div class="treatment-image">
+                <img src="blanqueamiento.jpg" alt="Blanqueamiento Dental">
+            </div>
+        </div>
+
+        <!-- Ejemplo de tratamiento 3 -->
+        <div class="treatment">
+            <div class="treatment-info">
+                <h2>Tratamiento 3: Ortodoncia</h2>
+                <p>Descripción del tratamiento 3, incluyendo sus beneficios y procedimiento.</p>
+                <p><strong>Precio:</strong> $X,XXX</p>
+                <a href="VistaTratamientoE.html" class="back-button" style="text-decoration: none;">Más Información</a>
+            </div>
+            <div class="treatment-image">
+                <img src="como-saber-que-necesitas-un-tratamiento-de-ortodoncia_img111659t1.jpg" alt="Ortodoncia">
+            </div>
+        </div>
+        <!-- Agrega más tratamientos según sea necesario -->
+    </div>
+
+</body>
+</html>
